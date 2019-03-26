@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TimelineView" >
+        <attr name="timeline_marker" format="color|reference"/>
+        <attr name="timeline_marker_size" format="dimension"/>
+        <attr name="timeline_marker_padding_top" format="dimension"/>
+        <attr name="timeline_marker_padding_bottom" format="dimension"/>
+        <attr name="timeline_marker_in_center" format="boolean"/>
+        <attr name="timeline_start_line_color" format="color"/>
+        <attr name="timeline_end_line_color" format="color"/>
+        <attr name="timeline_line_width" format="dimension"/>
+        <attr name="timeline_line_style" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="dash" value="1" />
+        </attr>
+        <attr name="timeline_line_style_dash_gap" format="dimension" />
+        <attr name="timeline_line_style_dash_length" format="dimension" />
+        <attr name="timeline_line_orientation" format="enum">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+        <attr name="timeline_line_padding" format="dimension"/>
+    </declare-styleable>
+</resources>

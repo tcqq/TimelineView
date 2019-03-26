@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="total_amount_colon">总金额：</string>
+    <string name="status_colon">状态：</string>
+    <string name="app_name">TimelineView</string>
+    <string name="active">进行中</string>
+    <string name="due_date_colon">截止日期：</string>
+    <string name="completed">完成</string>
+    <string name="request_to_modify_the_contract">要求修改合同</string>
+    <string name="inactive">待用</string>
+</resources>

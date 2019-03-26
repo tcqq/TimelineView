@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TimelineView</string>
+    <string name="total_amount_colon">Total amount:</string>
+    <string name="status_colon">Status:</string>
+    <string name="active">Active</string>
+    <string name="due_date_colon">Due date:</string>
+    <string name="completed">Completed</string>
+    <string name="request_to_modify_the_contract">Request to modify the contract</string>
+    <string name="inactive">Inactive</string>
+</resources>
