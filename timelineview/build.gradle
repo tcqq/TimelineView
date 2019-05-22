@@ -6,7 +6,7 @@ publish {
     groupId = 'com.tcqq.android'
     artifactId = 'timelineview'
     repoName = 'android'
-    publishVersion = '2.0.0'
+    publishVersion = '2.1.0'
     desc = 'Android Timeline View Library (Using RecyclerView) is simple implementation used to display view like Tracking of shipment/order, steppers etc.'
     website = 'https://github.com/tcqq/TimelineView'
 }
@@ -19,7 +19,7 @@ android {
         minSdkVersion 17
         targetSdkVersion 28
         versionCode 1
-        versionName "2.0.0"
+        versionName "2.1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 

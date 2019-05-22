@@ -8,6 +8,7 @@
         <attr name="timeline_marker_in_center" format="boolean"/>
         <attr name="timeline_start_line_color" format="color"/>
         <attr name="timeline_end_line_color" format="color"/>
+        <attr name="timeline_marker_color" format="color"/>
         <attr name="timeline_line_width" format="dimension"/>
         <attr name="timeline_line_style" format="enum">
             <enum name="normal" value="0" />

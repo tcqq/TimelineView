@@ -1,5 +1,5 @@
 [![API](https://img.shields.io/badge/API-17%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=17)
-[ ![Download](https://api.bintray.com/packages/tcqq/android/timelineview/images/download.svg?version=2.0.0) ](https://bintray.com/tcqq/android/timelineview/2.0.0/link)
+[ ![Download](https://api.bintray.com/packages/tcqq/android/timelineview/images/download.svg?version=2.1.0) ](https://bintray.com/tcqq/android/timelineview/2.1.0/link)
 [![Licence](https://img.shields.io/badge/Licence-Apache2-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 
 # ExpandView
@@ -23,6 +23,7 @@ Supported attributes with _default_ values:
 | `timeline_marker_in_center` | `false`
 | `timeline_start_line_color` | `@color/android.R.color.darker_gray`
 | `timeline_end_line_color` | `@color/android.R.color.darker_gray`
+| `timeline_marker_color` | `@color/colorAccent`
 | `timeline_line_width` | `2dp`
 | `timeline_line_style` | `normal`
 | `timeline_line_style_dash_gap` | `4dp`
@@ -76,7 +77,7 @@ repositories {
 ```
 dependencies {
     // Using JCenter
-    implementation 'com.tcqq.android:timelineview:2.0.0'
+    implementation 'com.tcqq.android:timelineview:2.1.0'
 }
 ```
 

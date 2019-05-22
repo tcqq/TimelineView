@@ -5,8 +5,12 @@ import android.content.res.TypedArray;
 import android.graphics.*;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
+import android.util.TypedValue;
 import android.view.View;
+import androidx.annotation.AttrRes;
+import androidx.annotation.ColorInt;
 import androidx.annotation.IntDef;
+import androidx.annotation.NonNull;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -47,12 +51,13 @@ public class TimelineView extends View {
     private int mMarkerPaddingBottom;
     private boolean mMarkerInCenter;
     private Paint mLinePaint = new Paint();
-    private boolean mDrawStartLine = false;
-    private boolean mDrawEndLine = false;
+    private boolean mDrawStartLine = true;
+    private boolean mDrawEndLine = true;
     private float mStartLineStartX, mStartLineStartY, mStartLineStopX, mStartLineStopY;
     private float mEndLineStartX, mEndLineStartY, mEndLineStopX, mEndLineStopY;
     private int mStartLineColor;
     private int mEndLineColor;
+    private int mMarkerColor;
     private int mLineWidth;
     private int mLineOrientation;
     private int mLineStyle;
@@ -76,6 +81,7 @@ public class TimelineView extends View {
         mMarkerInCenter = typedArray.getBoolean(R.styleable.TimelineView_timeline_marker_in_center, true);
         mStartLineColor = typedArray.getColor(R.styleable.TimelineView_timeline_start_line_color, getResources().getColor(android.R.color.darker_gray));
         mEndLineColor = typedArray.getColor(R.styleable.TimelineView_timeline_end_line_color, getResources().getColor(android.R.color.darker_gray));
+        mMarkerColor = typedArray.getColor(R.styleable.TimelineView_timeline_marker_color, getThemeColor(R.attr.colorAccent, getContext()));
         mLineWidth = typedArray.getDimensionPixelSize(R.styleable.TimelineView_timeline_line_width, Utils.dp2px(2F));
         mLineOrientation = typedArray.getInt(R.styleable.TimelineView_timeline_line_orientation, LineOrientation.VERTICAL);
         mLinePadding = typedArray.getDimensionPixelSize(R.styleable.TimelineView_timeline_line_padding, 0);
@@ -84,10 +90,10 @@ public class TimelineView extends View {
         mLineStyleDashGap = typedArray.getDimensionPixelSize(R.styleable.TimelineView_timeline_line_style_dash_gap, Utils.dp2px(4F));
         typedArray.recycle();
 
-        if (isInEditMode()) {
+/*        if (isInEditMode()) {
             mDrawStartLine = true;
             mDrawEndLine = true;
-        }
+        }*/
 
         if (mMarker == null) {
             mMarker = getResources().getDrawable(R.drawable.marker);
@@ -134,6 +140,8 @@ public class TimelineView extends View {
         int cHeight = height - pTop - pBottom;
 
         int markSize = Math.min(mMarkerSize, Math.min(cWidth, cHeight));
+
+        mMarker.setColorFilter(mMarkerColor, PorterDuff.Mode.SRC_ATOP);
 
         if (mMarkerInCenter) { //Marker in center is true
 
@@ -446,5 +454,12 @@ public class TimelineView extends View {
         } else {
             return LineType.NORMAL;
         }
+    }
+
+    @ColorInt
+    private int getThemeColor(@AttrRes int attrResId, @NonNull Context context) {
+        TypedValue value = new TypedValue();
+        context.getTheme().resolveAttribute(attrResId, value, true);
+        return value.data;
     }
 }
