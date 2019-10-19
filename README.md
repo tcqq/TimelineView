@@ -1,5 +1,5 @@
 [![API](https://img.shields.io/badge/API-17%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=17)
-[ ![Download](https://api.bintray.com/packages/tcqq/android/timelineview/images/download.svg?version=2.1.0) ](https://bintray.com/tcqq/android/timelineview/2.1.0/link)
+[ ![Download](https://api.bintray.com/packages/tcqq/android/timelineview/images/download.svg?version=2.1.1) ](https://bintray.com/tcqq/android/timelineview/2.1.0/link)
 [![Licence](https://img.shields.io/badge/Licence-Apache2-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 
 # TimelineView
@@ -77,7 +77,7 @@ repositories {
 ```
 dependencies {
     // Using JCenter
-    implementation 'com.tcqq.android:timelineview:2.1.0'
+    implementation 'com.tcqq.android:timelineview:2.1.1'
 }
 ```
 
