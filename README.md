@@ -2,7 +2,7 @@
 [ ![Download](https://api.bintray.com/packages/tcqq/android/timelineview/images/download.svg?version=2.1.0) ](https://bintray.com/tcqq/android/timelineview/2.1.0/link)
 [![Licence](https://img.shields.io/badge/Licence-Apache2-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 
-# ExpandView
+# TimelineView
 
 Android Timeline View Library (Using RecyclerView) is simple implementation used to display view like Tracking of shipment/order, steppers etc.
 
