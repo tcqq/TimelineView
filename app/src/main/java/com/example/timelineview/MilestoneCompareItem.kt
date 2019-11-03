@@ -12,7 +12,7 @@ import eu.davidea.flexibleadapter.items.IFlexible
 import eu.davidea.viewholders.FlexibleViewHolder
 
 /**
- * @author Alan Dreamer
+ * @author Alan Perry
  * @since 2019-03-26 Created
  */
 data class MilestoneCompareItem(

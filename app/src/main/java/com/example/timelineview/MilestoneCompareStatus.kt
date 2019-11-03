@@ -1,7 +1,7 @@
 package com.example.timelineview
 
 /**
- * @author Alan Dreamer
+ * @author Alan Perry
  * @since 2019-03-26 Created
  */
 enum class MilestoneCompareStatus {
