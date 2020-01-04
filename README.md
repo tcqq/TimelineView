@@ -1,5 +1,5 @@
 [![API](https://img.shields.io/badge/API-17%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=17)
-[ ![Download](https://api.bintray.com/packages/tcqq/android/timelineview/images/download.svg?version=2.1.1) ](https://bintray.com/tcqq/android/timelineview/2.1.0/link)
+[ ![Download](https://api.bintray.com/packages/tcqq/android/timelineview/images/download.svg?version=2.1.2) ](https://bintray.com/tcqq/android/timelineview/2.1.2/link)
 [![Licence](https://img.shields.io/badge/Licence-Apache2-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 
 # TimelineView
@@ -77,7 +77,7 @@ repositories {
 ```
 dependencies {
     // Using JCenter
-    implementation 'com.tcqq.android:timelineview:2.1.1'
+    implementation 'com.tcqq.android:timelineview:2.1.2'
 }
 ```
 
@@ -88,7 +88,7 @@ dependencies {
 License
 -------
 
-Copyright 2019 Vipul Asri, Alan Perry.
+Copyright 2020 Vipul Asri, Alan Perry.
 
 Licensed to the Apache Software Foundation (ASF) under one or more contributor
 license agreements.  See the NOTICE file distributed with this work for
@@ -97,7 +97,7 @@ file to you under the Apache License, Version 2.0 (the "License"); you may not
 use this file except in compliance with the License.  You may obtain a copy of
 the License at
 
-  http://www.apache.org/licenses/LICENSE-2.0
+  <http://www.apache.org/licenses/LICENSE-2.0>
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
