@@ -5,7 +5,7 @@ import android.util.TypedValue
 import androidx.annotation.ColorInt
 
 /**
- * @author Alan Perry
+ * @author Perry Lance
  * @since 2018/07/22 Created
  */
 object ThemeUtils {

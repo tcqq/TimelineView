@@ -88,7 +88,7 @@ dependencies {
 License
 -------
 
-Copyright 2020 Vipul Asri, Alan Perry.
+Copyright 2020 Vipul Asri, Perry Lance
 
 Licensed to the Apache Software Foundation (ASF) under one or more contributor
 license agreements.  See the NOTICE file distributed with this work for

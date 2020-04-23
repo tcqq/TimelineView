@@ -10,7 +10,7 @@ import kotlinx.android.synthetic.main.activity_milestone_compare.*
 import java.util.*
 
 /**
- * @author Alan Perry
+ * @author Perry Lance
  * @since 2019-03-27 Created
  */
 class MilestoneCompareActivity : AppCompatActivity() {
