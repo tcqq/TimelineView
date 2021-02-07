@@ -1,15 +1,10 @@
-apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
-
-publish {
-    userOrg = 'tcqq'
-    groupId = 'com.tcqq.android'
-    artifactId = 'timelineview'
-    repoName = 'android'
-    publishVersion = '2.1.2'
-    desc = 'Android Timeline View Library (Using RecyclerView) is simple implementation used to display view like Tracking of shipment/order, steppers etc.'
-    website = 'https://github.com/tcqq/TimelineView'
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
 }
+
+group='com.github.tcqq'
 
 android {
     compileSdkVersion 29

@@ -1,5 +1,5 @@
 [![API](https://img.shields.io/badge/API-17%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=17)
-[ ![Download](https://api.bintray.com/packages/tcqq/android/timelineview/images/download.svg?version=2.1.2) ](https://bintray.com/tcqq/android/timelineview/2.1.2/link)
+[![JitPack](https://jitpack.io/v/tcqq/TimelineView.svg)](https://jitpack.io/#tcqq/TimelineView)
 [![Licence](https://img.shields.io/badge/Licence-Apache2-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 
 # TimelineView
@@ -71,13 +71,13 @@ Supported attributes with _default_ values:
 #### build.gradle
 ```
 repositories {
-    jcenter()
+    maven { url 'https://jitpack.io' }
 }
 ```
 ```
 dependencies {
     // Using JCenter
-    implementation 'com.tcqq.android:timelineview:2.1.2'
+    implementation 'com.github.tcqq:timelineview:2.1.2'
 }
 ```
 
